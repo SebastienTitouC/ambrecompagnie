@@ -2,11 +2,11 @@
   <div>
     <nav class="nav">
       <ul class="menu">
-        <li><a class="links active" href="">Accueil</a></li>
-        <li><a class="links" href="">Qui suis-je ?</a></li>
-        <li><a class="links" href="">Services & Tarifs</a></li>
-        <li><a class="links" href="">CGV</a></li>
-        <li><a class="links" href="">Contact</a></li>
+        <li><NuxtLink class="links" to="/">Accueil</NuxtLink></li>
+        <li><NuxtLink class="links" to="/about">Qui suis-je ?</NuxtLink></li>
+        <li><NuxtLink class="links" to="/services">Services & Tarifs</NuxtLink></li>
+        <li><NuxtLink class="links" to="/cgv">CGV</NuxtLink></li>
+        <li><NuxtLink class="links" to="/contact">Contact</NuxtLink></li>
       </ul>
     </nav>
   </div>
@@ -35,7 +35,7 @@
 }
 
 .links:hover,
-.links.active {
+.active__link {
     color: var(--clr-red-600);
     border-radius: 14px 6px 14px 2px;
     filter: none;

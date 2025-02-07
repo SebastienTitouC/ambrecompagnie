@@ -62,3 +62,25 @@
     font-weight: 800;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Plantin';
+    src: url('~/assets/fonts/PlantinMTPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plantin';
+    src: url('~/assets/fonts/PlantinMTPro-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Cedarville Cursive';
+    src: url('~/assets/fonts/CedarvilleCursive-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

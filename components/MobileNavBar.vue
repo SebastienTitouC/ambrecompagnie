@@ -9,11 +9,11 @@
     <div class="menu_open" :class="{menu_close: !isMenuOpen}">
       <nav class="nav">
       <ul class="menu">
-        <li><a class="links active" href="">Accueil</a></li>
-        <li><a class="links" href="">Qui suis-je ?</a></li>
-        <li><a class="links" href="">Services & Tarifs</a></li>
-        <li><a class="links" href="">CGV</a></li>
-        <li><a class="links" href="">Contact</a></li>
+        <li><NuxtLink class="links" to="/" @click="toggleMenu">Accueil</NuxtLink></li>
+        <li><NuxtLink class="links" to="/about" @click="toggleMenu">Qui suis-je ?</NuxtLink></li>
+        <li><NuxtLink class="links" to="/services" @click="toggleMenu">Services & Tarifs</NuxtLink></li>
+        <li><NuxtLink class="links" to="/cgv" @click="toggleMenu">CGV</NuxtLink></li>
+        <li><NuxtLink class="links" to="/contact" @click="toggleMenu">Contact</NuxtLink></li>
       </ul>
     </nav>
     </div>
@@ -100,7 +100,7 @@ li {
   width: min(60%, 250px);
 }
 
-.links.active {
+.active__link {
     color: var(--clr-red-600);
     border-bottom: 2px solid var(--clr-black);
     border-right: 2px solid var(--clr-black);

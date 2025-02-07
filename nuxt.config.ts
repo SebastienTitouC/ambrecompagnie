@@ -7,12 +7,21 @@ export default defineNuxtConfig({
     '~/assets/css/fonts.css',
     '~/assets/css/utils.css'],
 
+  router: {
+    options : {
+      linkActiveClass: 'active__link',
+      linkExactActiveClass: 'exact__active__link',
+        }
+    },
   app: {
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: "Ambre & Compagnie | Garde à domicile - Tournefeuille"
     }
+  },
+  devServer: {
+    host: '0.0.0.0',  // Permet à Nuxt d'écouter sur toutes les interfaces réseau
+    port: 3000,       // Port sur lequel le serveur écoute (tu peux le changer si tu veux)
   }
-
 })

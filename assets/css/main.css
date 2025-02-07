@@ -3,15 +3,23 @@
     --clr-black: #000;
     --clr-white: #fff;
     --clr-pink-600: #db2777;
+    --clr-pink-600-10: rgb(219, 38, 120, .1);
+    --clr-pink-600-50: rgb(219, 38, 120, .5);
     --clr-pink-600-60: rgb(219, 38, 120, .6);
     --clr-fuchsia-600: #c026d3;
     --clr-red-500: #ef4444;
     --clr-red-600: #dc2626;
+    --clr-red-600-20: rgba(219, 41, 41, .2);
     --clr-red-600-60: rgba(219, 41, 41, .6);
     --clr-red-800: #991b1b;
     --clr-red-900: #7f1d1d;
     --clr-gray-200: #e5e7eb;
     --clr-gray-300: #d1d5db;
+
+    --clr-green-600: #16a34a;
+    --clr-green-700: #15803d;
+    --clr-green-800: #166534;
+    --clr-green-900: #365314;
     
     --clr-gray-500: #6b7280;
 
@@ -54,7 +62,7 @@ body {
 
 a {
     font-style: normal;
-    font-weight: 00;
+    font-weight: 800;
     text-decoration: none;
     padding: .4rem .6rem;
     transition: color .3s ease-in;
