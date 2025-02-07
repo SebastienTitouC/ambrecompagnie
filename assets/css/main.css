@@ -1,0 +1,94 @@
+:root {
+    /* https://v3.tailwindcss.com/docs/customizing-colors */
+    --clr-black: #000;
+    --clr-white: #fff;
+    --clr-pink-600: #db2777;
+    --clr-pink-600-60: rgb(219, 38, 120, .6);
+    --clr-fuchsia-600: #c026d3;
+    --clr-red-500: #ef4444;
+    --clr-red-600: #dc2626;
+    --clr-red-600-60: rgba(219, 41, 41, .6);
+    --clr-red-800: #991b1b;
+    --clr-red-900: #7f1d1d;
+    --clr-gray-200: #e5e7eb;
+    --clr-gray-300: #d1d5db;
+    
+    --clr-gray-500: #6b7280;
+
+
+    /* Sizes */
+    --size-xxs: .5rem;
+    --size-xs: .75rem;
+    --size-sm: .875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+    /* others */
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+
+    color: var(--clr-black);
+    min-height: 100vh;
+}
+
+a {
+    font-style: normal;
+    font-weight: 00;
+    text-decoration: none;
+    padding: .4rem .6rem;
+    transition: color .3s ease-in;
+}
+
+
+em {
+    color: var(--clr-pink-600);
+    font-style: italic;
+}
+
+
+strong {
+    color: var(--clr-fuchsia-600);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
