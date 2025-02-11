@@ -57,13 +57,14 @@ const toggleMenu = () => {
 
 .menu_open {
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   left: 0;
   width: 100vw;
-  height: max(calc(100vh - 5rem), 550px);
+  height: max(calc(100vh - 4rem), 550px);
   background-color: var(--clr-white);
   background-image: linear-gradient(134deg, rgba(1, 1, 1,0.02) 0%, rgba(1, 1, 1,0.02) 16%,transparent 16%, transparent 76%,rgba(58, 58, 58,0.02) 76%, rgba(58, 58, 58,0.02) 100%),linear-gradient(215deg, rgba(166, 166, 166,0.02) 0%, rgba(166, 166, 166,0.02) 33%,transparent 33%, transparent 79%,rgba(111, 111, 111,0.02) 79%, rgba(111, 111, 111,0.02) 100%),linear-gradient(303deg, rgba(215, 215, 215,0.02) 0%, rgba(215, 215, 215,0.02) 7%,transparent 7%, transparent 90%,rgba(192, 192, 192,0.02) 90%, rgba(192, 192, 192,0.02) 100%),linear-gradient(302deg, rgba(113, 113, 113,0.02) 0%, rgba(113, 113, 113,0.02) 34%,transparent 34%, transparent 73%,rgba(65, 65, 65,0.02) 73%, rgba(65, 65, 65,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
   z-index: 999;
+  border-top: .5px solid var(--clr-black);
 }
 
 .menu_close {
@@ -72,7 +73,7 @@ const toggleMenu = () => {
 
 .nav {
   width: 100%;
-  height: calc(100% - 5rem);
+  height: calc(100% - 4rem);
 }
 
 .menu {
@@ -94,19 +95,19 @@ li {
 }
 .links {
   color: var(--clr-black);
-  font-size: var(--size-2xl);
-  font-family: 'DancingScript';
+  font-size: var(--size-3xl);
+  font-family: "DancingScript", "Nunito", sans-serif, Arial;
   font-weight: 500;
   width: min(60%, 250px);
 }
 
 .active__link {
-    color: var(--clr-red-600);
-    border-bottom: 2px solid var(--clr-black);
-    border-right: 2px solid var(--clr-black);
-    border-top: 1px solid var(--clr-gray-500);
-    border-left: 1px solid var(--clr-gray-500);
-    border-radius: 14px 6px 14px 2px;
+    color: var(--clr-red-800);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    position: relative;
     filter: none;
 }
 </style>

@@ -44,7 +44,7 @@ const changeService = (id:number) => {
   margin-top: .5rem;
   position: relative;
   background-color: var(--clr-pink-600-50);
-  border: 1px solid var(--clr-pink-600-40);;
+  border: 1px solid var(--clr-pink-600-40);
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
 }
 

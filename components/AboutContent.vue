@@ -6,7 +6,6 @@
       <p class="description">Assistante vétérinaire depuis 2017, j'ai grandi au milieu des animaux. </p>
       <p class="description">C'est donc tout naturellement que je me suis dirigée vers un métier qui me permettait de prendre soin d'eux. En 2022 suite à la naissance de ma fille j'ai décidé de me lancer dans le pet sitting afin de pouvoir concilier famille et travail.</p>
       <p class="description">Je me propose donc de garder vos animaux chez vous lors de vos absences.</p>
-      <p class="description">Étant actuellement encore en poste chez un vétérinaire mes disponibilités sont pour le moment restreintes, n'hésitez pas à réserver tôt.</p>
     </div>
 
     <div class="about">
@@ -40,11 +39,10 @@
 
 <style scoped>
 .img {
+  margin-top: 1rem;
   object-fit: contain;
   object-position: center;
   width: 100%;
-  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.75);
-  
 }
 .about {
   display: flex;
@@ -55,6 +53,8 @@
 }
 
 .title {
+  font-weight: 800;
+  font-size: var(--size-3xl);
   margin-bottom: 1.5rem;
   text-align: center;
 }

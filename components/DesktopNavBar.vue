@@ -26,23 +26,23 @@
 
 .links {
     color: var(--clr-black);
-    font-size: var(--size-2xl);
-    font-family: "DancingScript";
+    font-size: var(--size-3xl);
+    font-family: "DancingScript", "Nunito", sans-serif, Arial;
     font-weight: 500;
-    border-left: 1px solid transparent;
-    border-right: 2px solid transparent;
+    border: 1px solid transparent;
+
     transition: background-color .3s ease-in-out, color .3s ease-in, border-radius .3s ease-in, border .3s;
 }
 
 .links:hover,
 .active__link {
-    color: var(--clr-red-600);
+    color: var(--clr-red-800);
     border-radius: 14px 6px 14px 2px;
     filter: none;
-    border-bottom: 2px solid var(--clr-black);
-    border-right: 2px solid var(--clr-black);
-    border-top: 1px solid var(--clr-gray-500);
-    border-left: 1px solid var(--clr-gray-500);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
 }
 
 /* ----- Media query  ----- */

@@ -21,7 +21,7 @@
           <p class="price__description">2 passages par jour : <span class="card__service__price">16€</span></p>
           <Discount :discount__price="20"/>
         </div>
-        <p class="card__service__hook">Chaque situation est unique, n'hésitez pas à me contacter pour plus d'information.</p>
+        <p class="card__service__hook">Chaque situation est unique, n'hésitez pas à me contacter pour plus d'informations.</p>
         <NuxtLink class="button" to="/contact">Je réserve !</NuxtLink>
       </div>
 
@@ -48,7 +48,7 @@
           <p class="price__description">2 passages par jour : <span class="card__service__price">22€</span></p>
           <Discount :discount__price="21"/>
         </div>
-        <p class="card__service__hook">Chaque situation est unique, n'hésitez pas à me contacter pour plus d'information.</p>
+        <p class="card__service__hook">Chaque situation est unique, n'hésitez pas à me contacter pour plus d'informations.</p>
         <NuxtLink class="button" to="/contact">Je réserve !</NuxtLink>
       </div>
     </div>
@@ -82,7 +82,7 @@
           <Discount :discount__price="29"/>
         </div>
         
-        <p class="card__service__hook">Chaque situation est unique, n'hésitez pas à me contacter pour plus d'information.</p>
+        <p class="card__service__hook">Chaque situation est unique, n'hésitez pas à me contacter pour plus d'informations.</p>
         <NuxtLink class="button" to="/contact">Je réserve !</NuxtLink>
       </div>
 
@@ -112,7 +112,7 @@
           <p class="price__description">3 balades par jour : <span class="card__service__price">40€</span></p>
           <Discount :discount__price="30"/>
         </div>
-        <p class="card__service__hook">Chaque situation est unique, n'hésitez pas à me contacter pour plus d'information.</p>
+        <p class="card__service__hook">Chaque situation est unique, n'hésitez pas à me contacter pour plus d'informations.</p>
         <NuxtLink class="button" to="/contact">Je réserve !</NuxtLink>
       </div>
     </div>
@@ -143,7 +143,7 @@ const props = defineProps({
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 92%;
+  width: 94%;
   border-radius: 10px;
   box-shadow: 2px 4px 10px var(--clr-black);
   background-color: var(--clr-white);
@@ -169,12 +169,13 @@ const props = defineProps({
 }
 
 .price__description-container {
-  display: flex; 
+  display: flex;
   justify-content: center; 
   align-items: center;
-  gap: .4rem; 
+  gap: .4rem;
 }
 .price__description {
+  flex-shrink: 0;
   margin-top: .2rem;
   font-weight: 800;
   font-size: var(--size-xl);
@@ -227,7 +228,9 @@ const props = defineProps({
   font-weight: 700;
   letter-spacing: -.02rem;
   margin: .8rem .3rem;
+  background: linear-gradient(90deg, #d53369 0%, #daaf51 100%);
 }
+
 .line {
   width: 90%; 
   height: 1px; 

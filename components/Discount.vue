@@ -26,7 +26,7 @@
 }
 
 .icon path{
-  fill: var(--clr-red-600-60);
+  fill: var(--clr-red-600);
 }
 
 .percent {
@@ -36,7 +36,7 @@
   height: 19px;
   font-size: var(--size-xs);
   color: var(--clr-white);
-  background-color: var(--clr-red-600-60); 
+  background-color: var(--clr-red-600); 
   padding: 0 .2rem;
 }
 </style>
