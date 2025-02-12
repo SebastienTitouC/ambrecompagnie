@@ -1,61 +1,52 @@
 <template>
-  <div class="footer">
-    <div class="footer__nav-wrapper">
-      <button @click="onclick(1)" class="footer__nav">
-        <img class="footer__paw" src="~/assets/icons/paw-fill.png" alt="Image 1">
-      </button>
-      <button @click="onclick(2)" class="footer__nav">
-        <img class="footer__paw" src="~/assets/icons/paw-fill.png" alt="Image 1">
-      </button>
-      <button @click="onclick(3)" class="footer__nav">
-        <img class="footer__paw" src="~/assets/icons/paw-fill.png" alt="Image 1">
-      </button>
-    </div>
+  <div class="go__up">
+    <a href="#top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+      </svg>
+
+    </a>
   </div>
 </template>
 
 <script lang="ts" setup>
 
-const onclick = (id) => {
-  const homeBackground = document.querySelector('.home__background')
 
-  if (homeBackground) {
-    homeBackground.style["background-image"] = `url("/images/${id}.jpg")`
+onMounted(() => {
+  const toggleGoUpButton = () => {
+    if (window.scrollY > 200) {
+      document.querySelector('.go__up')?.classList.add('visible')
+    } else {
+      document.querySelector('.go__up')?.classList.remove('visible')
+    }
+};
+  
+  window.addEventListener('scroll', toggleGoUpButton);
+})
 
-    if (id === 1 )
-      homeBackground.style["background-position"] = `bottom`
-    else
-      homeBackground.style["background-position"] = `top`
-
-  }
-}
 </script>
 
 <style scoped>
-.footer {
-  position: absolute;
-  bottom: 4rem;
-  left: 0;
-  width: 100vw;
-}
-.footer__nav-wrapper {
+.go__up {
+  position: fixed;
+  bottom: 1rem;
+  right: -5rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--clr-red-600);
+  border-radius: 5px;
+  color: var(--clr-red-600);
+  opacity: .7;
+  transition: .3s;
 }
 
-.footer__nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  transition: all .3s;
-}
 
-.footer__nav:hover {
-  transform: rotate(8deg);
+.go__up.visible {
+  right: 1.5rem;
 }
-
 </style>

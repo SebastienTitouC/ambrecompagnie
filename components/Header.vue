@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1 class="enterprise">Ambre & Cie</h1>
+    <NuxtLink to="/"><h1 class="enterprise">Ambre & Cie</h1></NuxtLink>
 
     <DesktopNavBar v-if="!isMobile" />
     <MobileNavBar v-else />

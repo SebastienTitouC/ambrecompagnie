@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="link-wrapper">
-      <NuxtLink class="link"  to="/services">
-        <span class="link__text">Services & Tarifs</span>
+      <NuxtLink class="link"  :to="link">
+        <span class="link__text">{{ label }}</span>
         <svg class="link__paws" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -19,7 +19,10 @@
 </template>
 
 <script lang="ts" setup>
-
+  const props = defineProps({
+    "label":String,
+    "link":String
+  })
 </script>
 
 <style scoped>
