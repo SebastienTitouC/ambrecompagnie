@@ -14,11 +14,11 @@
     </div>
   </div>
   <div class="img1">
-    <img width="600px" height="400px" src="~/public/images/12.jpg" alt="image de ">
+    <img width="600px" height="400px" src="~/public/images/promenade_chien_petsitter.webp" alt="Chien en balade avec Ambre, Petsitter à Tournefeuille">
   </div>
 
   <div class="img2">
-    <img src="~/public/images/2.jpg" alt="image de ">
+    <img width="600px" height="400px" src="~/public/images/chien_chat_balade.webp" alt="Chien et chat en balade à Plaisance-du-Touch" loading="lazy">
   </div>
 
   <div class="area">
@@ -56,7 +56,7 @@
   </div>
 
   <div class="img3">
-    <img src="~/public/images/3.jpg" alt="image de ">
+    <img width="600px" height="400px" src="~/public/images/visite_chat_domicile.webp" alt="Visite d'un chat à domicile par Ambre, petsitter" loading="lazy">
   </div>
 
 </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="lg__screen bg">
-      <img class="img" src="~/public/images/4_bis.jpg" alt="Photo de Ambre et Happy">
+      <img width="630px" height="400px" class="img" src="~/public/images/ambre_petsitter_tournefeuille.webp" alt="Ambre, petsitter à Tournefeuille" loading="lazy">
       <div class="about">
         <h1 class="title">À propos de moi</h1>
         <p class="description">Assistante vétérinaire depuis 2017, j'ai grandi au milieu des animaux. </p>
@@ -17,7 +17,7 @@
         <div>
           <div class="polaroid">
             <figure class="polaroid__figure">
-              <img class="polaroid__img" src="~/public/images/5.jpg" alt="Photo de Happy (Chien)" />
+              <img width="333px" height="333px" class="polaroid__img" src="~/public/images/chien_petsitter_en_balade.webp" alt="Chien en balade à La salvetat-saint-gilles" loading="lazy"/>
               <figcaption>Happy</figcaption>
             </figure>
           </div>
@@ -28,7 +28,7 @@
         <div>
           <div class="polaroid polaroid2">
               <figure class="polaroid__figure">
-                <img class="polaroid__img" src="~/public/images/6.jpg" alt="Photo de Titi (Chat)"/>
+                <img width="333px" height="333px" class="polaroid__img" src="~/public/images/chat_de_petsitter.webp" alt="Visite d'un chat à Colomiers" loading="lazy"/>
                 <figcaption>Titi</figcaption>
               </figure>
           </div>  
@@ -93,7 +93,7 @@
   box-shadow: 1px 2px 10px black;
 }
 .polaroid__figure figcaption {
-  font-family: 'Cedarville Cursive';
+  font-family: 'Cedarville Cursive', "DancingScript", sans-serif;
   font-weight: 400;
   text-align: center;
   margin-top: .6rem;

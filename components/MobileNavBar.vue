@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="toggleMenu" class="mobile__nav-wrapper" :class="{mobile__nav_open: isMenuOpen}" label="Ouvrir/fermer le menu">
+    <button @click="toggleMenu" class="mobile__nav-wrapper" :class="{mobile__nav_open: isMenuOpen}" aria-label="Ouvrir/fermer le menu">
       <div class="mobile__nav"></div>
       <div class="mobile__nav"></div>
       <div class="mobile__nav"></div>
@@ -96,7 +96,7 @@ li {
 .links {
   color: var(--clr-black);
   font-size: var(--size-3xl);
-  font-family: "DancingScript", "Nunito", sans-serif, Arial;
+  font-family: "DancingScript", "Nunito", sans-serif;
   font-weight: 500;
   width: min(60%, 250px);
 }

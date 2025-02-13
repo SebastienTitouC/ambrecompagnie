@@ -36,7 +36,7 @@
 }
 
 .enterprise {
-  font-family: 'DancingScript';
+  font-family: 'DancingScript', "Nunito", sans-serif;
   font-weight: 500;
   font-size: var(--size-3xl);
   color: var(--clr-red-800);

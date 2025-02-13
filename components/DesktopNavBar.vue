@@ -27,7 +27,7 @@
 .links {
     color: var(--clr-black);
     font-size: var(--size-2xl);
-    font-family: "DancingScript", "Nunito", sans-serif, Arial;
+    font-family: "DancingScript", "Nunito", sans-serif;
     font-weight: 500;
     border: 1px solid transparent;
 

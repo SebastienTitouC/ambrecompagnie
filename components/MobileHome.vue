@@ -101,7 +101,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("~/public/images/12.jpg");
+  background-image: url("~/public/images/promenade_chien_petsitter_mobile.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,7 +195,6 @@
 
   .wave {
     height: 40vh;
-    background-image: url("~/public/images/12.jpg");
   }
 
   .main__content {
