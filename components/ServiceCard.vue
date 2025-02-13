@@ -144,6 +144,7 @@ const props = defineProps({
   justify-content: start;
   align-items: center;
   width: 94%;
+  max-width: 400px;
   border-radius: 10px;
   box-shadow: 2px 4px 10px var(--clr-black);
   background-color: var(--clr-white);
@@ -238,4 +239,69 @@ const props = defineProps({
   background-color: #000000A0;
   border-radius: 50%;
 }
+
+@media (min-width: 475px) {
+  .card__service-wrapper {
+    margin-top: 2.5rem;
+    gap: 1.5rem;
+  }
+
+  .card__service__title {
+    font-size: var(--size-3xl);  
+  }
+
+  .card__service__price {
+    font-size: var(--size-base);
+  }
+
+  .price__description {
+    font-size: var(--size-2xl);
+  }
+
+  .title__price .card__service__price {
+    font-size: var(--size-4xl);
+  }
+
+  .card__service__hook {
+    font-size: var(--size-lg);
+    padding: 1rem .6rem .5rem .6rem;
+  }
+
+  .description {
+    margin-left: 1.6rem;
+  }
+
+  .button {
+    padding: .8rem 1.2rem;
+    font-size: var(--size-xl);
+    margin: 1rem .3rem;
+  }
+
+  .line {
+    width: 85%; 
+    height: 1px; 
+    margin: 1rem; 
+    background-color: #000000A0;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+  .card__service-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1536px) {}
 </style>

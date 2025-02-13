@@ -26,7 +26,7 @@
 
 .links {
     color: var(--clr-black);
-    font-size: var(--size-3xl);
+    font-size: var(--size-2xl);
     font-family: "DancingScript", "Nunito", sans-serif, Arial;
     font-weight: 500;
     border: 1px solid transparent;
@@ -54,19 +54,39 @@
   }
   
   .links {
-      font-size: var(--size-3xl);
+      font-size: var(--size-xl);
   }
+  a {
+    padding: .6rem 1.4rem;
+  }
+
+  .links:hover,
+.active__link {
+    filter: none;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+}
 }
 
  @media (min-width: 1280px) {
   .menu {
-    gap: 1rem;
+    gap: .5rem;
+  }
+
+  .links {
+      font-size: var(--size-2xl);
   }
 }
 
 @media (min-width: 1536px) {
   .menu {
-    gap: 1.2rem;
+    gap: .8rem;
+  }
+
+  .links {
+      font-size: var(--size-3xl);
   }
 }
 </style>

@@ -1,13 +1,12 @@
 <template>
-  <div class="go__up">
-    <a href="#top">
+  <a href="#top">
+    <div class="go__up">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
       </svg>
-
-    </a>
-  </div>
+    </div>
+  </a>
 </template>
 
 <script lang="ts" setup>
@@ -48,5 +47,14 @@ onMounted(() => {
 
 .go__up.visible {
   right: 1.5rem;
+}
+
+
+@media (min-width: 1024px) {
+  .go__up {
+    width: 50px;
+    height: 50px;
+  }
+
 }
 </style>

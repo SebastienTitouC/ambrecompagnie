@@ -37,6 +37,7 @@ const changeService = (id:number) => {
 <style scoped>
 .choice {
   width: 98vw;
+  max-width: 700px;
   height: 3rem;
   margin-left: 1vw;
   background-color: green;

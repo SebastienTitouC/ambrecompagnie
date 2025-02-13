@@ -25,11 +25,19 @@
 	    </svg>
 
       <div class="info">
-        <p class="strong">Mail</p>
-        <p><a href="mailto:ambrecordelet@gmail.com">ambrecordelet@gmail.com</a></p>
-        <br>
-        <p class="strong">Téléphone</p>
-        <p>06 50 99 10 13</p>
+        <div class="lg__screen">
+          <div>
+            <p class="strong">Mail</p>
+            <p><a href="mailto:ambrecordelet@gmail.com">ambrecordelet@gmail.com</a></p>
+<br>
+          </div>
+          <div>
+            <p class="strong">Téléphone</p>
+            <p><a href="tel:0650991013">06 50 99 10 13</a></p>
+
+          </div>
+
+        </div>
         <br>
         <div class="network">
           <NuxtLink to="https://www.facebook.com/profile.php?id=100093342230207">
@@ -125,5 +133,55 @@
   align-items: center;
   gap: 2rem;
 }
+
+@media (min-width: 475px) {
+  .title {
+    padding: 1.6rem 0 1.4rem 0 ;
+    font-size: var(--size-4xl);
+  }
+
+  .hook {
+    font-size: var(--size-lg);
+    padding: .5rem .8rem;
+  }
+
+  .info {
+    font-size: var(--size-2xl);
+    margin: 1rem .2rem;
+  }
+
+  .strong {
+    font-size: var(--size-4xl);
+  }
+
+  .network {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 640px) {
+
+.info {
+margin: 0;
+}
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+  .lg__screen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .hook {
+    padding: .2rem .8rem;
+  }
+}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1536px) {}
 
 </style>

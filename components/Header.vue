@@ -8,22 +8,22 @@
 </template>
 
 <script lang="ts" setup>
-const isMobile = ref(true)
-let mql:MediaQueryList
+  const isMobile = ref(true)
+  let mql:MediaQueryList
 
-function handleMqlChange(e) {
-  isMobile.value = e.matches
-}
+  function handleMqlChange(e) {
+    isMobile.value = e.matches
+  }
 
-onMounted(() => {
-  mql = window.matchMedia('(max-width: 768px)')
-  isMobile.value = mql.matches
-  mql.addEventListener('change', handleMqlChange)
-})
+  onMounted(() => {
+    mql = window.matchMedia('(max-width: 1024px)')
+    isMobile.value = mql.matches
+    mql.addEventListener('change', handleMqlChange)
+  })
 
-onUnmounted(() => {
-  mql.removeEventListener('change', handleMqlChange)
-})
+  onUnmounted(() => {
+    mql.removeEventListener('change', handleMqlChange)
+  })
 </script>
 
 <style scoped>
@@ -42,19 +42,32 @@ onUnmounted(() => {
   color: var(--clr-red-800);
 }
 
+@media (min-width: 475px) {
+  .enterprise {
+    font-size: var(--size-4xl);
+  }
+}
+
+@media (min-width: 640px) {
+  .enterprise {
+    font-size: var(--size-5xl);
+  }
+}
+
+@media (min-width: 768px) {}
 
 @media (min-width: 1024px) {
   .header {
     height: 5rem;
   }
-  .enterprise {
-      font-size: var(--size-4xl);
-  }
 }
 
  @media (min-width: 1280px) {
   .enterprise {
-      font-size: var(--size-5xl);
+      font-size: var(--size-6xl);
   }
 }
+
+@media (min-width: 1536px) {} 
+
 </style>
