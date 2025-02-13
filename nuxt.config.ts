@@ -17,7 +17,18 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: "Ambre & Compagnie | Garde à domicile - Tournefeuille"
+      htmlAttrs: {
+        lang: 'fr'
+      },
+      title: "Ambre & Compagnie | Garde à domicile - Tournefeuille",
+      meta: [
+        { name: 'description', content: 'Présentation des services petsitter (visite/promenade animaux à domicile) à Tournefeuille, Colomiers, Plaisance-du-touch, Salvetat-saint-gilles)' },
+        { name: 'keywords', content: 'garde, chien, chat, tournefeuille, domicile' },
+        { name: 'author', content: 'Ambre&Cie' },
+        { name: 'robots', content: 'index, follow' },
+        { property: 'og:title', content: 'Ambre & Compagnie  Garde à domicile - Tournefeuille' },
+        { property: 'og:description', content: 'Visite à domicile pour chien et chat' },
+      ],
     }
   },
   modules: ['@nuxt/ui'],

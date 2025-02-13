@@ -36,7 +36,7 @@
   overflow: hidden;
   color: var(--clr-white);
   background-color: #ffffff2e;
-  background-color: var(--clr-pink-600-60);
+  background-color: #A61C5E;
   border-radius: 8px;
   padding: .6rem 1.5rem;
   border: 1px solid var(--clr-pink-600);

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="toggleMenu" class="mobile__nav-wrapper" :class="{mobile__nav_open: isMenuOpen}">
+    <button @click="toggleMenu" class="mobile__nav-wrapper" :class="{mobile__nav_open: isMenuOpen}" label="Ouvrir/fermer le menu">
       <div class="mobile__nav"></div>
       <div class="mobile__nav"></div>
       <div class="mobile__nav"></div>
