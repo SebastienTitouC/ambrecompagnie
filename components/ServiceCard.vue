@@ -104,13 +104,13 @@
         <p class="description"><span class="yellow__tick">✔️</span> Dimanches et jours fériés <span class="card__service__price">+5€</span></p>
         <span class="line"></span>
         <div class="price__description-container">
-          <p class="price__description">2 balades par jour : <span class="card__service__price">29€</span></p>
-          <Discount :discount__price="23"/>
+          <p class="price__description">2 balades par jour : <span class="card__service__price">35€</span></p>
+          <Discount :discount__price="8"/>
         </div>
         
         <div class="price__description-container">
-          <p class="price__description">3 balades par jour : <span class="card__service__price">40€</span></p>
-          <Discount :discount__price="30"/>
+          <p class="price__description">3 balades par jour : <span class="card__service__price">48€</span></p>
+          <Discount :discount__price="16"/>
         </div>
         <p class="card__service__hook">Chaque situation est unique, n'hésitez pas à me contacter pour plus d'informations.</p>
         <NuxtLink class="button" to="/contact">Je réserve !</NuxtLink>

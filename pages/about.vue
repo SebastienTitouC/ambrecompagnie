@@ -32,7 +32,7 @@
                 <figcaption>Titi</figcaption>
               </figure>
           </div>  
-          <p class="description">Mute est arrivé accidenté à la clinique ou je travaille, il avait 4 mois et sa vie commençait déjà très mal. C'était donc une évidence de l’accueillir chez nous. C'est un chat plutôt câlin et plein de ressource lorsqu'il s'agit de faire des bêtises.</p>
+          <p class="description">Mute est arrivé accidenté à la clinique où je travaillais, il avait 4 mois et sa vie commençait déjà très mal. C'était donc une évidence de l’accueillir chez nous. C'est un chat plutôt câlin et plein de ressource lorsqu'il s'agit de faire des bêtises.</p>
           <p class="description">Il a aujourd'hui 5 ans et malgré sa surdité il se porte très bien.</p>
         </div>
 
